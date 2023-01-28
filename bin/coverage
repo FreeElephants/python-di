@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+source .env
+
+test -t 1 && USE_TTY="--tty"
+
+docker run \
+  --rm \
+  --interactive \
+  ${USE_TTY} \
+  --init \
+  --volume "$(pwd)":/app \
+  --workdir /app \
+  --user "$(id -u)":"$(id -g)" \
+  "${PYTHON_DEV_IMAGE}:${REVISION}" coverage "$@"

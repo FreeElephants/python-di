@@ -1,0 +1,15 @@
+# IDE artifacts
+/.idea/
+
+# pip project artifacts
+/.cache/
+/.local/
+
+# python local artifacts
+*/__pycache__/*
+
+# local env artifacts
+/.env
+
+# test artifacts
+/htmlcov/
