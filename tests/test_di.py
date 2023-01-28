@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
         di = DI()
         di.autowiring = False
         with self.assertRaises(ComponentNotFoundError):
-            foo = di.get(Foo)
+            di.get(Foo)
 
     def test_init_injection(self):
         di = DI()
