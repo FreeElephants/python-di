@@ -17,3 +17,5 @@ jobs:
     - name: Build the Docker image
       run: make install
 
+    - name: lint
+      run: make lint-check
