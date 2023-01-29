@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2023-01-29
+
 ### Added 
 
 - Added DI class
+
+
+[unreleased]: https://github.com/free-elephants/python-di/compare/0.2.0...HEAD

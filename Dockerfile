@@ -5,9 +5,11 @@ FROM python:3.11-alpine
 RUN pip install --upgrade pip \
     && pip install  \
         black \
+        build \
         coverage \
         pylint \
-        pylint-quotes
+        pylint-quotes \
+        twine
 
 # End dev dependencies
 

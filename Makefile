@@ -2,10 +2,12 @@ PATH := $(shell pwd)/bin:$(PATH)
 $(shell cp -n dev.env .env)
 include .env
 
-install: build
-	#pip install -r requirements.pip
+install: docker-build
 
-build:
+build: docker-build
+	python -m build
+
+docker-build:
 	docker build -t "$(PYTHON_DEV_IMAGE):$(REVISION)" .
 
 test:
