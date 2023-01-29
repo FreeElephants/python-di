@@ -9,7 +9,7 @@ RUN pip install --upgrade pip \
         coverage \
         pylint \
         pylint-quotes \
-        twin
+        twine
 
 # End dev dependencies
 

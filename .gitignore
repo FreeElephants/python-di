@@ -7,7 +7,7 @@
 
 # python local artifacts
 */__pycache__/*
-*/python_di.egg-info/*
+*/*.egg-info/*
 /dist/
 
 # local env artifacts
