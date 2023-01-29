@@ -8,7 +8,8 @@ RUN pip install --upgrade pip \
         build \
         coverage \
         pylint \
-        pylint-quotes
+        pylint-quotes \
+        twin
 
 # End dev dependencies
 
