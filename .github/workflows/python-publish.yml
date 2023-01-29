@@ -9,8 +9,6 @@
 name: Upload Python Package
 
 on:
-  push: # TODO remove before merge to master
-    branches: "*"
   release:
     types: [published]
 
