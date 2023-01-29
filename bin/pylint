@@ -12,4 +12,4 @@ docker run \
   --volume "$(pwd)":/app \
   --workdir /app \
   --user "$(id -u)":"$(id -g)" \
-  "${PYTHON_DEV_IMAGE}:${REVISION}" pylint --load-plugins pylint_quotes "$@"
+  "${PYTHON_DEV_IMAGE}:${REVISION}" pylint "$@"
