@@ -1,0 +1,22 @@
+[MASTER]
+disable=
+    C0114, # missing-module-docstring
+    C0115, # missing-class-docstring
+    C0116, # missing-function-docstring
+
+[FORMAT]
+max-line-length=120
+min-public-methods=0
+
+good-names=
+    foo,
+    bar,
+    di,
+
+[MISCELLANEOUS]
+notes=FIXME,XXX
+
+[SIMILARITIES]
+min-similarity-lines=25
+ignore-comments=yes
+ignore-docstrings=yes
